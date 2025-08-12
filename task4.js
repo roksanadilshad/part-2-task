@@ -10,7 +10,7 @@ const phones = [
 function findAveragePhonePrice(phones){
     let count = 0;
     for(let obj of phones){
-      count = (count + obj.price);
+      count = count + obj.price;
     }
     return count / phones.length;
 }
